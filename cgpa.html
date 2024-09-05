@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center;">
+    <script>
+        function popup1(aa,bb,cc,dd,ee,ff)
+        {
+            var z = parseInt(aa.value)+parseInt(bb.value)+parseInt(cc.value)+parseInt(dd.value)+parseInt(ee.value)+parseInt(ff.value)
+            var per = z/300*100
+            var cgpa = per/10
+            document.getElementById('adtn').innerHTML=cgpa
+        }
+    </script>
+    <form action="">
+        <label for="">Enter Malayalam mark</label>
+        <input type="number" id='a' placeholder="Malayalam"><br><br>
+        <label for="">Enter Maths mark</label>
+        <input type="number" id='b' placeholder="Maths"><br><br>
+        <label for="">Enter English mark</label>
+        <input type="number" id='c' placeholder="English"><br><br>
+        <label for="">Enter statistics mark</label>
+        <input type="number" id='d' placeholder="Statistics"><br><br>
+        <label for="">Enter Physics mark</label>
+        <input type="number" id='e' placeholder="Physics"><br><br>
+        <label for="">Enter chemistry mark</label>
+        <input type="number" id='f' placeholder="Chemistry"><br><br><br>
+
+
+        <button onclick="popup1(document.getElementById('a'),document.getElementById('b'),document.getElementById('c'),document.getElementById('d'),document.getElementById('e'),document.getElementById('f'))">Submit</button>
+        <p>The CGPA value is :</p><h1 id="adtn">0</h1>
+    </form>
+   
+    
+</body>
+</html>
